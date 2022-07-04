@@ -1,0 +1,2 @@
+# docs
+SmartPOS Documentation
