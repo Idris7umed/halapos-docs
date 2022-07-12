@@ -1,0 +1,19 @@
+@import 'tailwindcss/base';
+@import './fonts.css';
+@import './docsearch.css';
+@import './prism.css';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+img:first-child {
+  @apply rounded-md border;
+}
+img:nth-child(2) {
+  @apply hidden;
+}
+.dark img:first-child {
+  @apply hidden;
+}
+.dark img:nth-child(2) {
+  @apply block;
+}
