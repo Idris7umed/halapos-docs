@@ -1,38 +1,33 @@
-# Syntax
+# SmartPOS Docs
 
-Syntax is a [Tailwind UI](https://tailwindui.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
+Get SmartPOS - desktop point of sale solution and set up in under thirty minutes.
 
-## Getting started
+Please download the [SmartPOS - Desktop & Cloud Point of Sale App](https://www.smartpos.co/download) If you haven't purchased the license yet, you can register account to download the free version.
 
-To get started with this template, first install the npm dependencies:
+---
 
-```bash
-npm install
-cp .env.example .env.local
-```
+## Getting help
 
-Next, run the development server:
+If you need any help or have question, please ask question at [support portal](https://tecdiary.net/support/)
 
-```bash
-npm run dev
-```
+### Submit an issue
 
-Finally, open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+If you find any issue, please let us know by posting at [GitHub Issues](https://github.com/SmartPOS-co/dochttps://github.com/SmartPOS-co/docs/issues/new) and report bugs/errors.
 
-## Customizing
+### Join the community
 
-You can start editing this template by modifying the files in the `/src` folder. The site will auto-update as you edit these files.
+You can [ask question](https://github.com/SmartPOS-co/docs/discussions/new?category=q-a) and [share ideas](https://github.com/SmartPOS-co/docs/discussions/new?category=ideas)
 
-## License
+---
 
-This site template is a commercial product and is licensed under the [Tailwind UI license](https://tailwindui.com/license).
+## Future Plans
 
-## Learn more
+&check; Combo Items
 
-To learn more about the technologies used in this site template, see the following resources:
+&cross; Item variants
 
-- [Tailwind CSS](https://tailwindcss.com/docs) - the official Tailwind CSS documentation
-- [Next.js](https://nextjs.org/docs) - the official Next.js documentation
-- [Headless UI](https://headlessui.dev) - the official Headless UI documentation
-- [Markdoc](https://markdoc.io) - the official Markdoc documentation
-- [DocSearch](https://docsearch.algolia.com) - the official DocSearch documentation
+&cross; Customer Groups
+
+&cross; On-Screen Keyboard
+
+&cross; Option to print labels
