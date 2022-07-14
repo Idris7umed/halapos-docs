@@ -11,15 +11,17 @@ const navigation = [
     title: 'Introduction',
     links: [
       { title: 'Getting started', href: '/' },
-      { title: 'Installation', href: '/docs/installation' },
+      { title: 'Installation', href: '/installation' },
     ],
   },
   {
     title: 'User Guide',
     links: [
-      { title: 'Dashboard', href: '/docs/dashboard' },
-      { title: 'POS Screen', href: '/docs/pos-screen' },
-      { title: 'Manage Sales', href: '/docs/manage-sales' },
+      { title: 'Dashboard', href: '/guide/dashboard' },
+      { title: 'POS Screen', href: '/guide/pos-screen' },
+      { title: 'Sales & Purchases', href: '/guide/sales-purchases' },
+      { title: 'Customers & Suppliers', href: '/guide/customers-suppliers' },
+      { title: 'Products & Units', href: '/guide/products-units' },
     ],
   },
 ]

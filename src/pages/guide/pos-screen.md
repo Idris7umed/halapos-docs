@@ -47,4 +47,6 @@ The order total is displayed at the bottom with option to view the total tax. Th
 ![POS2](/images/light/pos2.png 'SmartPOS - Point of Sale Screen with order item')
 ![POS2](/images/dark/pos2.png 'SmartPOS - Point of Sale Screen with order item')
 
+---
+
 > If you have any suggestions, please [start a discussion](https://github.com/SmartPOS-co/docs/discussions/new?category=ideas).
