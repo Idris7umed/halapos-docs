@@ -8,9 +8,9 @@ Get SmartPOS - desktop point of sale solution and set up in under thirty minutes
 
 {% link-grid %}
 
-{% link-grid-link title="Installation" icon="installation" href="/docs/installation" description="Step-by-step guides to setting up your point of sale system." /%}
+{% link-grid-link title="Installation" icon="installation" href="/installation" description="Step-by-step guides to setting up your point of sale system." /%}
 
-{% link-grid-link title="Usage Guide" icon="presets" href="/docs/architecture-guide" description="Learn how the point of sale system works & get most out of it." /%}
+{% link-grid-link title="Usage Guide" icon="presets" href="/guide/dashboard" description="Learn how the point of sale system works & get most out of it." /%}
 
 {% /link-grid %}
 
