@@ -19,9 +19,10 @@ const navigation = [
     links: [
       { title: 'Dashboard', href: '/guide/dashboard' },
       { title: 'POS Screen', href: '/guide/pos-screen' },
+      { title: 'Products', href: '/guide/products' },
+      { title: 'Categories & Units', href: '/guide/categories-units' },
       { title: 'Sales & Purchases', href: '/guide/sales-purchases' },
       { title: 'Customers & Suppliers', href: '/guide/customers-suppliers' },
-      { title: 'Products & Units', href: '/guide/products-units' },
     ],
   },
 ]

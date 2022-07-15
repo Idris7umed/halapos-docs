@@ -6,7 +6,7 @@
 @import 'tailwindcss/utilities';
 
 img:first-child {
-  @apply rounded-md border;
+  @apply rounded-lg border;
 }
 img:nth-child(2) {
   @apply hidden;

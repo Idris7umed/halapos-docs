@@ -33,11 +33,11 @@ Add/edit order page uses the same form with following fields
 6. **Taxes**: (optional) select multiple taxes (optional)
 7. **Tax Method**: exclusive/inclusive
    ```
-   Exclusive: `Price * tax rate / 100`
+   Exclusive: Price * tax rate / 100
    Price: 100, Net Price: 100, Tax Rate: 10 (10%), Unit Price: 110
    ```
    ```
-   Inclusive `Price * tax rate / (100 + tax_rate)`
+   Inclusive: Price * tax rate / (100 + tax_rate)
    Price: 100, Net Price: 90.91, Tax Rate: 9.09 (10%), Unit Price: 100
    ```
 8. **Discount**: (optional) Fixed or Percentage% i.e, 10 or 10%
@@ -49,7 +49,7 @@ Add/edit order page uses the same form with following fields
 
 ## Automation
 
-## On complete order, system will update the product's stock and set the customer dues accordingly.
+System will update the product's stock and set the customer dues accordingly on completed orders.
 
 ---
 
