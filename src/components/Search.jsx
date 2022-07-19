@@ -1,42 +1,36 @@
-import { useCallback, useEffect, useState } from 'react'
-import { createPortal } from 'react-dom'
 import Link from 'next/link'
-import Router from 'next/router'
-import { DocSearchModal, useDocSearchKeyboardEvents } from '@docsearch/react'
+import { useRouter } from 'next/router'
+import { Fragment, useState, useCallback } from 'react'
+import { Combobox, Dialog, Transition } from '@headlessui/react'
 
-const docSearchConfig = {
-  appId: process.env.NEXT_PUBLIC_DOCSEARCH_APP_ID,
-  apiKey: process.env.NEXT_PUBLIC_DOCSEARCH_API_KEY,
-  indexName: process.env.NEXT_PUBLIC_DOCSEARCH_INDEX_NAME,
-}
-
-function Hit({ hit, children }) {
-  return (
-    <Link href={hit.url}>
-      <a>{children}</a>
-    </Link>
-  )
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
 }
 
 export function Search() {
-  let [isOpen, setIsOpen] = useState(false)
-  let [modifierKey, setModifierKey] = useState()
+  const [query, setQuery] = useState('')
+  const [open, setOpen] = useState(false)
+  const [results, setResults] = useState([])
 
   const onOpen = useCallback(() => {
-    setIsOpen(true)
-  }, [setIsOpen])
+    setOpen(true)
+  }, [setOpen])
 
   const onClose = useCallback(() => {
-    setIsOpen(false)
-  }, [setIsOpen])
+    setOpen(false)
+  }, [setOpen])
 
-  useDocSearchKeyboardEvents({ isOpen, onOpen, onClose })
+  const router = useRouter()
 
-  useEffect(() => {
-    setModifierKey(
-      /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform) ? '⌘' : 'Ctrl '
-    )
-  }, [])
+  async function doSearch(query) {
+    if (query === '') {
+      setResults([])
+    }
+
+    let res = await fetch(`/api/search?q=${query}`)
+    let data = await res.json()
+    setResults(data.results)
+  }
 
   return (
     <>
@@ -54,28 +48,93 @@ export function Search() {
         <span className="sr-only md:not-sr-only md:ml-2 md:text-slate-500 md:dark:text-slate-400">
           Search docs
         </span>
-        {modifierKey && (
-          <kbd className="ml-auto hidden font-medium text-slate-400 dark:text-slate-500 md:block">
-            <kbd className="font-sans">{modifierKey}</kbd>
-            <kbd className="font-sans">K</kbd>
-          </kbd>
-        )}
       </button>
-      {isOpen &&
-        createPortal(
-          <DocSearchModal
-            {...docSearchConfig}
-            initialScrollY={window.scrollY}
-            onClose={onClose}
-            hitComponent={Hit}
-            navigator={{
-              navigate({ itemUrl }) {
-                Router.push(itemUrl)
-              },
-            }}
-          />,
-          document.body
-        )}
+      <Transition.Root
+        show={open}
+        as={Fragment}
+        afterLeave={() => setQuery('')}
+        appear
+      >
+        <Dialog as="div" className="relative z-50" onClose={onClose}>
+          <Transition.Child
+            as={Fragment}
+            enter="ease-out duration-300"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="ease-in duration-200"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <div className="fixed inset-0 bg-gray-500 bg-opacity-50 backdrop-blur-sm transition-opacity dark:bg-gray-900 dark:bg-opacity-50" />
+          </Transition.Child>
+
+          <div className="fixed inset-0 z-10 overflow-y-auto p-4 sm:p-6 md:p-20">
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0 scale-95"
+              enterTo="opacity-100 scale-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100 scale-100"
+              leaveTo="opacity-0 scale-95"
+            >
+              <Dialog.Panel className="mx-auto max-w-xl transform divide-y divide-gray-100 overflow-hidden rounded-xl bg-white shadow-2xl ring-1 ring-black ring-opacity-5 transition-all dark:divide-gray-800 dark:bg-gray-700">
+                <Combobox
+                  onChange={(post) => {
+                    setOpen(false)
+                    router.push(post.href)
+                  }}
+                >
+                  <div className="relative">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="pointer-events-none absolute top-3.5 left-4 h-5 w-5 text-gray-400"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                      />
+                    </svg>
+                    <Combobox.Input
+                      className="h-12 w-full border-0 bg-transparent pl-11 pr-4 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-0 dark:text-gray-300 sm:text-sm"
+                      placeholder="Search..."
+                      autoComplete="off"
+                      onChange={(event) => doSearch(event.target.value)}
+                    />
+                  </div>
+
+                  {results.length > 0 && (
+                    <Combobox.Options
+                      static
+                      className="max-h-72 scroll-py-2 overflow-y-auto py-2 text-sm text-gray-800 dark:text-gray-200"
+                    >
+                      {results.map((post) => (
+                        <Combobox.Option
+                          key={post.id}
+                          value={post}
+                          className={({ active }) =>
+                            classNames(
+                              'cursor-default select-none px-4 py-2',
+                              active && 'bg-sky-600 text-white'
+                            )
+                          }
+                        >
+                          {post.title}
+                        </Combobox.Option>
+                      ))}
+                    </Combobox.Options>
+                  )}
+                </Combobox>
+              </Dialog.Panel>
+            </Transition.Child>
+          </div>
+        </Dialog>
+      </Transition.Root>
     </>
   )
 }

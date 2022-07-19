@@ -64,6 +64,7 @@ function collectHeadings(nodes, slugify = slugifyWithCounter()) {
   return sections
 }
 
+export { navigation }
 export default function App({ Component, pageProps }) {
   let title = pageProps.markdoc?.frontmatter.title
 
