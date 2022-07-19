@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+// const { randomUUID } = require('crypto')
+import { navigation } from '../pages/_app'
 import { Fragment, useState, useCallback } from 'react'
 import { Combobox, Dialog, Transition } from '@headlessui/react'
 
@@ -22,14 +24,21 @@ export function Search() {
 
   const router = useRouter()
 
+  let links = []
+  navigation.map((n) => {
+    links = [...links, ...n.links]
+  })
+  // links = links.map((l) => ({ ...l, id: randomUUID() }))
+
   async function doSearch(query) {
     if (query === '') {
       setResults([])
     }
 
-    let res = await fetch(`/api/search?q=${query}`)
-    let data = await res.json()
-    setResults(data.results)
+    // let res = await fetch(`/api/search?q=${query}`)
+    // let data = await res.json()
+    const results = links?.filter((p) => p.title.toLowerCase().includes(query))
+    setResults(results)
   }
 
   return (
@@ -115,7 +124,7 @@ export function Search() {
                     >
                       {results.map((post) => (
                         <Combobox.Option
-                          key={post.id}
+                          key={post.href}
                           value={post}
                           className={({ active }) =>
                             classNames(
