@@ -30,7 +30,7 @@ Add/edit order page uses the same form with following fields
 3. **Customer**: select the customer (searchable)
 4. **Status**: pending/complete (pending is draft while completed is finalized)
 5. **Order Items**: scan barcode or search to added products to the order. Set quantity to `0` to remove them from
-6. **Taxes**: (optional) select multiple taxes (optional)
+6. **Taxes**: (optional) select multiple taxes
 7. **Tax Method**: exclusive/inclusive
    ```
    Exclusive: Price * tax rate / 100
