@@ -28,17 +28,17 @@ This section set your business information and has following fields
 
 This section let you set the application settings and has following fields
 
-1. **Default Category**: business name
-2. **Default customer**: (optional) business registration
-3. **Default order tax**: business email address
-4. **Rounding**: business phone number
-5. **POS item grid**: (optional) business address
-6. **After sale page**: (optional) business country
-7. **Auto print receipt**: (optional) business state
-8. **Table display rows**: (optional) business state
-9. **Overselling**: (optional) business state
-10. **Date format**: (optional) business state
-11. **POS pin code**: (optional) business state
+1. **Default Category**: default category to load the item on pos grid
+2. **Default customer**: default customer would be auto selected on pos
+3. **Default order tax**: (optional) default order level tax
+4. **Rounding**: (optional) round the grand total
+5. **POS item grid**: product name, photo or both
+6. **After sale page**: redirect page after pos sale
+7. **Auto print receipt**: if you want to auto print receipt after sale
+8. **Table display rows**: number of table rows
+9. **Overselling**: enable/disable over selling
+10. **Date format**: select date format
+11. **POS pin code**: (optional) pin code is required for staff to delete the pos item
 
 ---
 
@@ -52,13 +52,13 @@ This section let you set payment options. Just click add to get new input field.
 
 This section let you set the application settings and has following fields
 
-1. **Barcode contains**: business name
-2. **Barcode total characters**: (optional) business registration
-3. **Item code start position**: business email address
-4. **Number of character in item code**: business phone number
-5. **Weight/price start position**: (optional) business address
-6. **Number of character in weight/price**: (optional) business country
-7. **Weight/price divide by**: (optional) business state
+1. **Barcode contains**: if you barcode has weight or price
+2. **Barcode total characters**: total characters in the barcode
+3. **Item code start position**: product code start position
+4. **Number of character in item code**: item code length
+5. **Weight/price start position**: weight/price start position
+6. **Number of character in weight/price**: weight/price length
+7. **Weight/price divide by**: option to divide the weight/price to get unit value
 
 ---
 
@@ -66,10 +66,10 @@ This section let you set the application settings and has following fields
 
 This section let you configure your currency & number formatting.
 
-1. **Currency code**: business name
-2. **Number format**: (optional) business registration
-3. **Decimal points**: business email address
-4. **Quantity decimal points**: business phone number
+1. **Currency code**: currency code for amount
+2. **Number format**: number format for amount
+3. **Decimal points**: number of decimals to display on amounts
+4. **Quantity decimal points**: number of decimals to display on quantity
 
 ---
 

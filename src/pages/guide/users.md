@@ -26,4 +26,15 @@ Add/edit sale page uses the same form with following fields
 
 ---
 
+## User Roles
+
+Add/edit sale page uses the same form with following fields
+
+1. **Admin**: full access to all pages
+2. **Manager**: access to all records except users and settings
+3. **Staff**: access to own sales, customers, expenses and payments etc
+   > user is consider a staff if manager and admin is not checked
+
+---
+
 > If you have any suggestions, please [start a discussion](https://github.com/SmartPOS-co/docs/discussions/new?category=ideas).
