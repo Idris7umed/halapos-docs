@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fguide\u002Fcategories-units","\u002Fguide\u002Fdashboard","\u002Finstallation","\u002F","\u002Fguide\u002Fcustomers-suppliers","\u002Fguide\u002Fpos-screen","\u002Fguide\u002Fsales-purchases","\u002Fguide\u002Fproducts"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
