@@ -3,7 +3,7 @@ export function Logo() {
     <svg
       viewBox="0 0 143 32"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-10 w-auto fill-slate-700 dark:grayscale dark:invert"
+      className="h-10 w-auto fill-dark-700 dark:grayscale dark:invert"
       style={{
         fillRule: 'evenodd',
         clipRule: 'evenodd',
