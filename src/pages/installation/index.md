@@ -1,6 +1,7 @@
 ---
 title: Installation
-description: SmartPOS installation guide.
+pageTitle: Installation of SmartPOS
+description: Installation guide for SmartPOS - A user-friendly, fast to learn and easy to use point of sale software.
 ---
 
 ## MacOS

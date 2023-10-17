@@ -36,7 +36,7 @@ Category 01,,
 Category 02,,Subcategory 01|Subcategory 02
 ```
 
-You can copy the above text and then paste it in notepad or texteditor and save it as `Categories.csv` You can add more rows and even can open with excel or any other spreadsheet software to add rows easily.
+You can copy the above text and then paste it in notepad or text editor and save it as `Categories.csv` You can add more rows and even can open with excel or any other spreadsheet software to add rows easily.
 
 The first row should have the following values as it is used to determine the column name.
 

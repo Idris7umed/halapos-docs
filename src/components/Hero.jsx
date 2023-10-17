@@ -34,7 +34,6 @@ export function Hero() {
               <Image
                 src={blurCyanImage}
                 alt=""
-                layout="fixed"
                 width={530}
                 height={530}
                 unoptimized
@@ -77,7 +76,6 @@ export function Hero() {
                 <Image
                   src={blurCyanImage}
                   alt=""
-                  layout="fixed"
                   width={530}
                   height={530}
                   unoptimized
@@ -88,7 +86,6 @@ export function Hero() {
                 <Image
                   src={blurIndigoImage}
                   alt=""
-                  layout="fixed"
                   width={567}
                   height={567}
                   unoptimized
@@ -184,12 +181,11 @@ export function Hero() {
                 </div>
               </div> */}
             </div>
-            <div className="w-full text-center">
+            <div className="w-full text-center relative z-10">
               <Image
                 src={smartPOSImage}
                 width={603}
                 height={360}
-                layout="responsive"
                 alt="SmartPOS"
                 placeholder="blur"
                 unoptimized

@@ -5,15 +5,15 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-img:first-child {
+.prose img:first-child {
   @apply rounded-lg border;
 }
-img:nth-child(2) {
+.prose img:nth-child(2) {
   @apply hidden;
 }
-.dark img:first-child {
+.dark .prose img:first-child {
   @apply hidden;
 }
-.dark img:nth-child(2) {
+.dark .prose img:nth-child(2) {
   @apply block;
 }

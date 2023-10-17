@@ -61,7 +61,7 @@ type,code,name,symbology,cost,price,quantity,alert_quantity,category,unit,taxes,
 Standard,TP01,Test Product 1,CODE128,11,18,0,,Drinks,Piece,SST,Inclusive,,
 ```
 
-You can copy the above text and then paste it in notepad or texteditor and save it as `Products.csv` You can add more rows and even can open with excel or any other spreadsheet software to add rows easily.
+You can copy the above text and then paste it in notepad or text editor and save it as `Products.csv` You can add more rows and even can open with excel or any other spreadsheet software to add rows easily.
 
 The first row should have the following values as it is used to determine the column name.
 

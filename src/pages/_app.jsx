@@ -77,7 +77,7 @@ export default function App({ Component, pageProps }) {
 
   let pageTitle =
     pageProps.markdoc?.frontmatter.pageTitle ||
-    `${pageProps.markdoc?.frontmatter.title} - Docs`
+    `${pageProps.markdoc?.frontmatter.title} - SmartPOS Docs`
 
   let description = pageProps.markdoc?.frontmatter.description
 
@@ -92,8 +92,8 @@ export default function App({ Component, pageProps }) {
         {description && <meta name="description" content={description} />}
       </Head>
       <Layout
-        navigation={navigation}
         title={title}
+        navigation={navigation}
         tableOfContents={tableOfContents}
       >
         <Component {...pageProps} />
