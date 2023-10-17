@@ -15,5 +15,5 @@
   @apply hidden;
 }
 .dark .prose img:nth-child(2) {
-  @apply block;
+  @apply block rounded-lg;
 }
