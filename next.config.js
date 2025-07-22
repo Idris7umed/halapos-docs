@@ -1,6 +1,6 @@
-const withMarkdoc = require('@markdoc/next.js')
+const withMarkdoc = require('@markdoc/next.js');
 
-const prod = process.env.NODE_ENV === 'production'
+const isGithubPages = process.env.GITHUB_PAGES === 'true';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -8,7 +8,9 @@ const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md'],
   images: {
     unoptimized: true,
-  }
-}
+  },
+  basePath: isGithubPages ? '/halapos-docs' : '',
+  assetPrefix: isGithubPages ? '/halapos-docs/' : '',
+};
 
-module.exports = withMarkdoc()(nextConfig)
+module.exports = withMarkdoc()(nextConfig);
