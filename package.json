@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "GITHUB_PAGES=true next build && GITHUB_PAGES=true next export -o docs",
+    "build": "next build && next export -o docs",
     "start": "next start",
     "lint": "next lint"
   },
