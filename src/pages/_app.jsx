@@ -77,7 +77,7 @@ export default function App({ Component, pageProps }) {
 
   let pageTitle =
     pageProps.markdoc?.frontmatter.pageTitle ||
-    `${pageProps.markdoc?.frontmatter.title} - SmartPOS Docs`
+    `${pageProps.markdoc?.frontmatter.title} - HalaPOS Docs`
 
   let description = pageProps.markdoc?.frontmatter.description
 

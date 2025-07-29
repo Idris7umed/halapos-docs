@@ -50,7 +50,7 @@ function Header({ navigation }) {
       </div>
       <div className="relative flex basis-0 justify-end space-x-6 sm:space-x-8 md:flex-grow">
         <ThemeSelector className="relative z-10" />
-        <Link href="https://github.com/SmartPOS-co/docs" className="group">
+        <Link href="https://github.com/HalaPOS-co/docs" className="group">
             <span className="sr-only">GitHub</span>
             <svg
               aria-hidden="true"

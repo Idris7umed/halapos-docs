@@ -37,4 +37,4 @@ Add/edit sale page uses the same form with following fields
 
 ---
 
-> If you have any suggestions, please [start a discussion](https://github.com/SmartPOS-co/docs/discussions/new?category=ideas).
+> If you have any suggestions, please [start a discussion](https://halabyte.com/contact).

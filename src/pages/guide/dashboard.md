@@ -1,12 +1,12 @@
 ---
 title: Dashboard
-description: SmartPOS has simple user interface that is easy to learn, minimize the time for training.
+description: HalaPOS has simple user interface that is easy to learn, minimize the time for training.
 ---
 
-SmartPOS dashboard has daily, monthly & yearly sales, purchases, expense and payments.
+HalaPOS dashboard has daily, monthly & yearly sales, purchases, expense and payments.
 
-![Dashboard](/images/light/dashboard.png 'SmartPOS - Dashboard')
-![Dashboard](/images/dark/dashboard.png 'SmartPOS - Dashboard')
+![Dashboard](/images/light/dashboard.png 'HalaPOS - Dashboard')
+![Dashboard](/images/dark/dashboard.png 'HalaPOS - Dashboard')
 
 ## Top bar
 
@@ -14,7 +14,7 @@ App top bar display the first character of your company name as logo, icon menu 
 
 ## Left side bar
 
-SmartPOS has left side bar full display on big screen sizes and collapsed on small screen sizes.
+HalaPOS has left side bar full display on big screen sizes and collapsed on small screen sizes.
 
 ## Main area
 
@@ -22,4 +22,4 @@ Dashboard main area has month's and year's sales, purchases, expenses and paymen
 
 ---
 
-> If you have any suggestions, please [start a discussion](https://github.com/SmartPOS-co/docs/discussions/new?category=ideas).
+> If you have any suggestions, please [start a discussion](https://halabyte.com/contact).

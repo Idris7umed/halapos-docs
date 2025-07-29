@@ -67,7 +67,7 @@ The first row should have the following values as it is used to determine the co
 
 `type`, `code`, `name`, `symbology`, `cost`, `price`, `quantity`, `alert_quantity`, `category`, `unit`, `taxes`, `tax_method`, `alt_name`, `details`
 
-> To import with photos, please create a folder on your desktop and name it `smartpos` Now save your products' photos in this folder. The photo name should be product code (`TP01.png`, `TP02.png` etc) and only .png files are supported.
+> To import with photos, please create a folder on your desktop and name it `HalaPOS` Now save your products' photos in this folder. The photo name should be product code (`TP01.png`, `TP02.png` etc) and only .png files are supported.
 
 ![Products Import Read](/images/light/import2.png 'Products Import Read')
 ![Products Import Read](/images/dark/import2.png 'Products Import Read')
@@ -76,4 +76,4 @@ Once you have prepared the file, select it and click read. System will read your
 
 ---
 
-> If you have any suggestions, please [start a discussion](https://github.com/SmartPOS-co/docs/discussions/new?category=ideas).
+> If you have any suggestions, please [start a discussion](https://halabyte.com/contact).

@@ -8,7 +8,7 @@ import { ButtonLink } from '@/components/Button'
 import { HeroBackground } from '@/components/HeroBackground'
 import blurCyanImage from '@/images/blur-cyan.png'
 import blurIndigoImage from '@/images/blur-indigo.png'
-import smartPOSImage from '@/images/smartpos.png'
+import HalaPOSImage from '@/images/HalaPOS.png'
 
 const codeLanguage = 'javascript'
 const code = `export default {
@@ -53,14 +53,14 @@ export function Hero() {
               <div className="mt-8 flex space-x-4 md:justify-center lg:justify-start">
                 <ButtonLink
                   target="_blank"
-                  href="https://www.smartpos.co/#app-pricing"
+                  href="https://www.HalaPOS.co/#app-pricing"
                 >
                   Buy License
                 </ButtonLink>
                 <ButtonLink
                   target="_blank"
                   variant="secondary"
-                  href="https://www.smartpos.co/#cloud-pricing"
+                  href="https://www.HalaPOS.co/#cloud-pricing"
                 >
                   Check Cloud Plans
                 </ButtonLink>
@@ -183,10 +183,10 @@ export function Hero() {
             </div>
             <div className="w-full text-center relative z-10">
               <Image
-                src={smartPOSImage}
+                src={HalaPOSImage}
                 width={603}
                 height={360}
-                alt="SmartPOS"
+                alt="HalaPOS"
                 placeholder="blur"
                 unoptimized
                 className="mx-auto max-w-full rounded-lg"

@@ -1,6 +1,6 @@
 ---
 title: Reports
-description: SmartPOS has reports for totals with taxes and sales, purchases, expenses and payment.
+description: HalaPOS has reports for totals with taxes and sales, purchases, expenses and payment.
 ---
 
 ## Application Alerts
@@ -51,4 +51,4 @@ This report display the list house keepings with option to filter the list for r
 
 ---
 
-> If you have any suggestions, please [start a discussion](https://github.com/SmartPOS-co/docs/discussions/new?category=ideas).
+> If you have any suggestions, please [start a discussion](https://halabyte.com/contact).

@@ -1,6 +1,6 @@
 ---
 title: Payments & Expenses
-description: SmartPOS helps you manage your payments and expense. It add amount to customers/suppliers on sales/purchases so that you can create payment from list customers/suppliers for any amount.
+description: HalaPOS helps you manage your payments and expense. It add amount to customers/suppliers on sales/purchases so that you can create payment from list customers/suppliers for any amount.
 ---
 
 ## Listing Page
@@ -56,4 +56,4 @@ System will update the customer's or supplier's due/balance and adjust it accord
 
 ---
 
-> If you have any suggestions, please [start a discussion](https://github.com/SmartPOS-co/docs/discussions/new?category=ideas).
+> If you have any suggestions, please [start a discussion](https://halabyte.com/contact).

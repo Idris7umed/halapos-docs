@@ -1,12 +1,12 @@
 ---
 title: Point of Sale Screen
-description: SmartPOS has simple user interface that is easy to learn, minimize the time for training.
+description: HalaPOS has simple user interface that is easy to learn, minimize the time for training.
 ---
 
-SmartPOS has simple user interface that is easy to learn, minimize the time for training.
+HalaPOS has simple user interface that is easy to learn, minimize the time for training.
 
-![POS](/images/light/pos.png 'SmartPOS - Point of Sale Screen')
-![POS](/images/dark/pos.png 'SmartPOS - Point of Sale Screen')
+![POS](/images/light/pos.png 'HalaPOS - Point of Sale Screen')
+![POS](/images/dark/pos.png 'HalaPOS - Point of Sale Screen')
 
 ## Top bar
 
@@ -44,9 +44,9 @@ The items added to the order will be listed here with product name (click to cha
 
 The order total is displayed at the bottom with option to view the total tax. The last row has the actions button to delete the order, print the order & bill and payment to finalize the order.
 
-![POS2](/images/light/pos2.png 'SmartPOS - Point of Sale Screen with order item')
-![POS2](/images/dark/pos2.png 'SmartPOS - Point of Sale Screen with order item')
+![POS2](/images/light/pos2.png 'HalaPOS - Point of Sale Screen with order item')
+![POS2](/images/dark/pos2.png 'HalaPOS - Point of Sale Screen with order item')
 
 ---
 
-> If you have any suggestions, please [start a discussion](https://github.com/SmartPOS-co/docs/discussions/new?category=ideas).
+> If you have any suggestions, please [start a discussion](https://halabyte.com/contact).

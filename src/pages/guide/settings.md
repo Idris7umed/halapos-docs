@@ -1,6 +1,6 @@
 ---
 title: Settings
-description: SmartPOS has settings page that make it easy for you to set it as per you preferences.
+description: HalaPOS has settings page that make it easy for you to set it as per you preferences.
 ---
 
 ![Settings](/images/light/settings.png 'Settings')
@@ -79,4 +79,4 @@ You can set the receipt header and footer and it will be displayed on receipts.
 
 ---
 
-> If you have any suggestions, please [start a discussion](https://github.com/SmartPOS-co/docs/discussions/new?category=ideas).
+> If you have any suggestions, please [start a discussion](https://halabyte.com/contact).
