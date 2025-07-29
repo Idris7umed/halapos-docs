@@ -2,7 +2,7 @@
 
 Get HalaPOS - desktop point of sale solution and set up in under thirty minutes.
 
-Please download the [HalaPOS - Desktop & Cloud Point of Sale App](https://www.HalaPOS.co/download) If you haven't purchased the license yet, you can register account to download the free version.
+Please download the [HalaPOS - Desktop & Cloud Point of Sale App](https://www.HalaPOS.com/download) If you haven't purchased the license yet, you can register account to download the free version.
 
 ---
 

@@ -53,14 +53,14 @@ export function Hero() {
               <div className="mt-8 flex space-x-4 md:justify-center lg:justify-start">
                 <ButtonLink
                   target="_blank"
-                  href="https://www.HalaPOS.co/#app-pricing"
+                  href="https://www.HalaPOS.com/#app-pricing"
                 >
                   Buy License
                 </ButtonLink>
                 <ButtonLink
                   target="_blank"
                   variant="secondary"
-                  href="https://www.HalaPOS.co/#cloud-pricing"
+                  href="https://www.HalaPOS.com/#cloud-pricing"
                 >
                   Check Cloud Plans
                 </ButtonLink>
