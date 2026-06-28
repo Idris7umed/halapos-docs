@@ -1,6 +1,6 @@
 ---
 title: Payments & Expenses
-description: HalaPOS helps you manage your payments and expense. It add amount to customers/suppliers on sales/purchases so that you can create payment from list customers/suppliers for any amount.
+description: HalaPOS helps you manage payments and expenses. Dues are added to customers and suppliers on sales and purchases, so you can record a payment for any amount.
 ---
 
 ## Listing Page
@@ -8,7 +8,7 @@ description: HalaPOS helps you manage your payments and expense. It add amount t
 ![Payments](/images/light/payments.png 'Payments')
 ![Payments](/images/dark/payments.png 'Payments')
 
-This listing page display all your records with actions to view, edit and delete. You can click the reference number to view the details. As other tables, the info & pagination links are at the bottom of the page.
+This listing page displays all your records, with actions to view, edit, and delete. You can click the reference number to view the details. As with other tables, the info and pagination links are at the bottom of the page.
 
 ---
 
@@ -17,7 +17,7 @@ This listing page display all your records with actions to view, edit and delete
 ![Payment](/images/light/payment.png 'Payment')
 ![Payment](/images/dark/payment.png 'Payment')
 
-The payment view is similar to sale and purchase. It displays logo and company details at top then date, id and reference with qrcode. Followed by received/sent to details and amount.
+The payment view is similar to a sale or purchase. It displays your logo and company details at the top, then the date, ID, and reference with a QR code, followed by the received-from / sent-to details and the amount.
 
 ---
 
@@ -25,34 +25,34 @@ The payment view is similar to sale and purchase. It displays logo and company d
 
 ### Payment
 
-Add/edit order page uses the same form with following fields
+The add/edit payment page uses the same form, with the following fields:
 
 1. **Type**: select the type (customer/supplier)
 2. **Customer/Supplier**: select the customer/supplier (searchable)
 3. **Date**: select the date
-4. **Reference**: (optional) set or leave blank to auto generate
+4. **Reference**: (optional) set one, or leave blank to auto-generate
 5. **Amount**: payment amount
 6. **Method**: payment method
-7. **Comment/Note**: (optional) for any additional details
+7. **Comment/Note**: (optional) any additional details
 
 ---
 
 ### Expense
 
-Add/edit order page uses the same form with following fields
+The add/edit expense page uses the same form, with the following fields:
 
 1. **Date**: select the date
-2. **Reference**: (optional) set or leave blank to auto generate
+2. **Reference**: (optional) set one, or leave blank to auto-generate
 3. **Amount**: expense amount
-4. **Company**: (optional) type the related company name
-5. **Tax Number**: (optional) company tax number
-6. **Comment/Note**: (optional) for any additional details
+4. **Company**: (optional) the related company name
+5. **Tax Number**: (optional) the company's tax number
+6. **Comment/Note**: (optional) any additional details
 
 ---
 
 ## Automation
 
-System will update the customer's or supplier's due/balance and adjust it accordingly to payment.
+The system will update the customer's or supplier's due/balance and adjust it according to the payment.
 
 ---
 

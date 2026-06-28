@@ -1,6 +1,6 @@
 ---
 title: Sales & Purchases
-description: A sale is the exchange of a commodity for money; the action of selling something, while a purchase is the action of buying something.
+description: A sale is the exchange of goods for money, while a purchase is buying goods from a supplier. This guide covers recording both in HalaPOS.
 ---
 
 ## Listing Page
@@ -8,7 +8,7 @@ description: A sale is the exchange of a commodity for money; the action of sell
 ![Sales](/images/light/sales.png 'Sales')
 ![Sales](/images/dark/sales.png 'Sales')
 
-This listing page display all your orders with actions to view, edit and delete. You can click the reference number to view the sale details. As other tables, the info & pagination links are at the bottom of the page.
+This listing page displays all your orders, with actions to view, edit, and delete. You can click the reference number to view the sale details. As with other tables, the info and pagination links are at the bottom of the page.
 
 ---
 
@@ -17,19 +17,19 @@ This listing page display all your orders with actions to view, edit and delete.
 ![Order](/images/light/order.png 'Order')
 ![Order](/images/dark/order.png 'Order')
 
-The sale view is compact. It displays logo and company details at top then sale date, id and reference with qrcode. Followed by billed to details and order items. Lastly tax summary and sale comment.
+The sale view is compact. It displays your logo and company details at the top, then the sale date, ID, and reference with a QR code, followed by the billed-to details and order items, and finally the tax summary and sale comment.
 
 ---
 
 ## Add/Edit
 
-Add/edit order page uses the same form with following fields
+The add/edit order page uses the same form, with the following fields:
 
 1. **Date**: select the sale date
-2. **Reference**: (optional) set or leave blank to auto generate
+2. **Reference**: (optional) set one, or leave blank to auto-generate
 3. **Customer**: select the customer (searchable)
-4. **Status**: pending/complete (pending is draft while completed is finalized)
-5. **Order Items**: scan barcode or search to added products to the order. Set quantity to `0` to remove them from
+4. **Status**: pending/complete (pending is a draft, while completed is finalized)
+5. **Order Items**: scan a barcode or search to add products to the order. Set the quantity to `0` to remove them.
 6. **Taxes**: (optional) select multiple taxes
 7. **Tax Method**: exclusive/inclusive
    ```
@@ -40,16 +40,16 @@ Add/edit order page uses the same form with following fields
    Inclusive: Price * tax rate / (100 + tax_rate)
    Price: 100, Net Price: 90.91, Tax Rate: 9.09 (10%), Unit Price: 100
    ```
-8. **Discount**: (optional) Fixed or Percentage% i.e, 10 or 10%
-   > order discount is applied to order total (`products' price+taxes`)
+8. **Discount**: (optional) fixed or percentage, e.g. 10 or 10%
+   > The order discount is applied to the order total (`products' price + taxes`).
 9. **Due Date**: (optional) due date for payment
-10. **Comment/Note**: (optional) for sale comments
+10. **Comment/Note**: (optional) any notes for the sale
 
 ---
 
 ## Automation
 
-System will update the product's stock and set the customer dues accordingly on completed orders.
+The system will update the product's stock and set the customer's dues accordingly on completed orders.
 
 ---
 

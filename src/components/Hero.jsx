@@ -1,28 +1,10 @@
-import { Fragment } from 'react'
-// import Image from 'next/image'
 import Image from './Image.js'
-import clsx from 'clsx'
-import Highlight, { defaultProps } from 'prism-react-renderer'
 
 import { ButtonLink } from '@/components/Button'
 import { HeroBackground } from '@/components/HeroBackground'
 import blurCyanImage from '@/images/blur-cyan.png'
 import blurIndigoImage from '@/images/blur-indigo.png'
 import HalaPOSImage from '@/images/HalaPOS.png'
-
-const codeLanguage = 'javascript'
-const code = `export default {
-  strategy: 'predictive',
-  engine: {
-    cpus: 12,
-    backups: ['./storage/cache.wtf'],
-  },
-}`
-
-const tabs = [
-  { name: 'cache-advance.config.js', isActive: true },
-  { name: 'package.json', isActive: false },
-]
 
 export function Hero() {
   return (
@@ -41,8 +23,8 @@ export function Hero() {
               />
             </div>
             <div className="relative">
-              <p className="inline bg-gradient-to-r from-indigo-200 via-primary-400 to-indigo-200 bg-clip-text font-display text-3xl tracking-tight text-transparent">
-                Easy, Fast & Smart Point of Sale Solution
+              <p className="inline bg-gradient-to-r from-fuchsia-300 via-primary-400 to-fuchsia-300 bg-clip-text font-display text-4xl tracking-tight text-transparent">
+                Easy, Fast &amp; Smart Point of Sale Solution
               </p>
               <p className="mt-3 text-xl tracking-tight text-dark-400">
                 A user-friendly interface that&apos;s fast to learn and easy to
@@ -53,14 +35,14 @@ export function Hero() {
               <div className="mt-8 flex space-x-4 md:justify-center lg:justify-start">
                 <ButtonLink
                   target="_blank"
-                  href="https://www.HalaPOS.com/#app-pricing"
+                  href="https://www.halapos.com/#app-pricing"
                 >
                   Buy License
                 </ButtonLink>
                 <ButtonLink
                   target="_blank"
                   variant="secondary"
-                  href="https://www.HalaPOS.com/#cloud-pricing"
+                  href="https://www.halapos.com/#cloud-pricing"
                 >
                   Check Cloud Plans
                 </ButtonLink>
@@ -92,101 +74,13 @@ export function Hero() {
                   priority
                 />
               </div>
-              {/* <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary-300 via-primary-300/70 to-blue-300 opacity-10 blur-lg" />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary-300 via-primary-300/70 to-blue-300 opacity-10" />
-              <div className="relative rounded-2xl bg-[#0A101F]/80 ring-1 ring-white/10 backdrop-blur">
-                <div className="absolute -top-px left-20 right-11 h-px bg-gradient-to-r from-primary-300/0 via-primary-300/70 to-primary-300/0" />
-                <div className="absolute -bottom-px left-11 right-20 h-px bg-gradient-to-r from-blue-400/0 via-blue-400 to-blue-400/0" />
-                <div className="pl-4 pt-4">
-                  <svg
-                    aria-hidden="true"
-                    className="h-2.5 w-auto stroke-dark-500/30"
-                    fill="none"
-                  >
-                    <circle cx="5" cy="5" r="4.5" />
-                    <circle cx="21" cy="5" r="4.5" />
-                    <circle cx="37" cy="5" r="4.5" />
-                  </svg>
-                  <div className="mt-4 flex space-x-2 text-xs">
-                    {tabs.map((tab) => (
-                      <div
-                        key={tab.name}
-                        className={clsx('flex h-6 rounded-full', {
-                          'bg-gradient-to-r from-primary-400/30 via-primary-400 to-primary-400/30 p-px font-medium text-primary-300':
-                            tab.isActive,
-                          'text-dark-500': !tab.isActive,
-                        })}
-                      >
-                        <div
-                          className={clsx(
-                            'flex items-center rounded-full px-2.5',
-                            { 'bg-dark-800': tab.isActive }
-                          )}
-                        >
-                          {tab.name}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="mt-6 flex items-start px-1 text-sm">
-                    <div
-                      aria-hidden="true"
-                      className="select-none border-r border-dark-300/5 pr-4 font-mono text-dark-600"
-                    >
-                      {Array.from({
-                        length: code.split('\n').length,
-                      }).map((_, index) => (
-                        <Fragment key={index}>
-                          {(index + 1).toString().padStart(2, '0')}
-                          <br />
-                        </Fragment>
-                      ))}
-                    </div>
-                    <Highlight
-                      {...defaultProps}
-                      code={code}
-                      language={codeLanguage}
-                      theme={undefined}
-                    >
-                      {({
-                        className,
-                        style,
-                        tokens,
-                        getLineProps,
-                        getTokenProps,
-                      }) => (
-                        <pre
-                          className={clsx(
-                            className,
-                            'flex overflow-x-auto pb-6'
-                          )}
-                          style={style}
-                        >
-                          <code className="px-4">
-                            {tokens.map((line, index) => (
-                              <div key={index} {...getLineProps({ line })}>
-                                {line.map((token, index) => (
-                                  <span
-                                    key={index}
-                                    {...getTokenProps({ token })}
-                                  />
-                                ))}
-                              </div>
-                            ))}
-                          </code>
-                        </pre>
-                      )}
-                    </Highlight>
-                  </div>
-                </div>
-              </div> */}
             </div>
             <div className="w-full text-center relative z-10">
               <Image
                 src={HalaPOSImage}
                 width={603}
                 height={360}
-                alt="HalaPOS"
+                alt="HalaPOS point of sale dashboard"
                 placeholder="blur"
                 unoptimized
                 className="mx-auto max-w-full rounded-lg"

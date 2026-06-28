@@ -90,6 +90,7 @@ export function Search() {
               <Dialog.Panel className="mx-auto max-w-xl transform divide-y divide-dark-100 overflow-hidden rounded-xl bg-white shadow-2xl ring-1 ring-black ring-opacity-5 transition-all dark:divide-dark-800 dark:bg-dark-700">
                 <Combobox
                   onChange={(post) => {
+                    if (!post) return
                     setOpen(false)
                     router.push(post.href)
                   }}
@@ -126,10 +127,10 @@ export function Search() {
                         <Combobox.Option
                           key={post.href}
                           value={post}
-                          className={({ active }) =>
+                          className={({ focus }) =>
                             classNames(
                               'cursor-default select-none px-4 py-2',
-                              active && 'bg-primary-600 text-white'
+                              focus && 'bg-primary-600 text-white'
                             )
                           }
                         >

@@ -1,10 +1,23 @@
-@import 'tailwindcss/base';
+@import 'tailwindcss';
 @import './fonts.css';
-@import './docsearch.css';
 @import './prism.css';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
 
+/* Reuse the existing v3-style JS config (custom colors, fonts, font sizes). */
+@config '../../tailwind.config.js';
+
+/* Tailwind v4 changed the default border color to `currentColor`. Restore the
+   v3 behaviour (a light gray) so bare `border` utilities look unchanged. */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-zinc-200, currentColor);
+  }
+}
+
+/* Light/dark image swap: each guide ships a light + dark screenshot pair. */
 .prose img:first-child {
   @apply rounded-lg border;
 }

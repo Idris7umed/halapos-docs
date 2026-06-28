@@ -25,7 +25,8 @@ module.exports = {
       colors: {
         dark: colors.zinc,
         error: colors.red,
-        primary: colors.blue,
+        // Primary accent matches the HalaPOS brand violet (#5d0dd3).
+        primary: colors.violet,
         secondary: colors.gray,
       },
       fontFamily: {

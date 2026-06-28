@@ -1,25 +1,27 @@
 ---
 title: Installation
 pageTitle: Installation of HalaPOS
-description: Installation guide for HalaPOS - A user-friendly, fast to learn and easy to use point of sale software.
+description: Step-by-step installation guide for HalaPOS — the user-friendly, fast-to-learn point of sale software for macOS and Windows.
 ---
 
-## MacOS
+Installing HalaPOS takes just a few minutes. Follow the steps for your operating system below.
 
-Just open the dmg file, click the HalaPOS and drag it Applications folder.
+## macOS
 
-![MacOS Installation](/images/HalaPOS-Mac-DMG.png 'MacOS Installation')
-![MacOS Installation](/images/HalaPOS-Mac-DMG.png 'MacOS Installation')
+Open the `.dmg` file, then drag the HalaPOS icon into your **Applications** folder.
+
+![macOS Installation](/images/HalaPOS-Mac-DMG.png 'macOS Installation')
+![macOS Installation](/images/HalaPOS-Mac-DMG.png 'macOS Installation')
 
 ## Windows
 
-HalaPOS installation is easy. You just need to check the publisher name
+Installation on Windows is easy. First, confirm the publisher name:
 
 ```
 Halabyte Technologies
 ```
 
-and then start the installer and follow along.
+Then start the installer and follow the steps.
 
 ![Start Installation](/images/HalaPOS-Installation-Start.png 'Start Installation')
 ![Start Installation](/images/HalaPOS-Installation-Start.png 'Start Installation')
