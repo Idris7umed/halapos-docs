@@ -1,10 +1,16 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import { slugifyWithCounter } from '@sindresorhus/slugify'
 
 import { Layout } from '@/components/Layout'
 
-import 'focus-visible'
 import '@/styles/tailwind.css'
+
+// Canonical base URL for SEO tags. Override per environment with
+// NEXT_PUBLIC_SITE_URL; defaults to the production docs domain.
+const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL || 'https://docs.halapos.com'
+).replace(/\/+$/, '')
 
 const navigation = [
   {
@@ -73,6 +79,8 @@ function collectHeadings(nodes, slugify = slugifyWithCounter()) {
 
 export { navigation }
 export default function App({ Component, pageProps }) {
+  let router = useRouter()
+
   let title = pageProps.markdoc?.frontmatter.title
 
   let pageTitle =
@@ -80,6 +88,10 @@ export default function App({ Component, pageProps }) {
     `${pageProps.markdoc?.frontmatter.title} - HalaPOS Docs`
 
   let description = pageProps.markdoc?.frontmatter.description
+
+  let path = router.asPath.split(/[?#]/)[0]
+  let canonical = `${SITE_URL}${path === '/' ? '' : path.replace(/\/$/, '')}`
+  let ogImage = `${SITE_URL}/images/light/dashboard.png`
 
   let tableOfContents = pageProps.markdoc?.content
     ? collectHeadings(pageProps.markdoc.content)
@@ -89,7 +101,24 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>{pageTitle}</title>
+        <link rel="canonical" href={canonical} />
         {description && <meta name="description" content={description} />}
+
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="HalaPOS Docs" />
+        <meta property="og:title" content={pageTitle} />
+        {description && (
+          <meta property="og:description" content={description} />
+        )}
+        <meta property="og:url" content={canonical} />
+        <meta property="og:image" content={ogImage} />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        {description && (
+          <meta name="twitter:description" content={description} />
+        )}
+        <meta name="twitter:image" content={ogImage} />
       </Head>
       <Layout
         title={title}

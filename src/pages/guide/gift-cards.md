@@ -1,6 +1,6 @@
 ---
 title: Gift Cards
-description: A good way to promote sales is offer gift cards so that your customer can pass this to their family and friends and you get new customers.
+description: Gift cards are a great way to promote sales — your customers can share them with family and friends, bringing you new customers.
 ---
 
 ## Listing Page
@@ -8,18 +8,18 @@ description: A good way to promote sales is offer gift cards so that your custom
 ![Gift Cards](/images/light/gift-cards.png 'Gift Cards')
 ![Gift Cards](/images/dark/gift-cards.png 'Gift Cards')
 
-This listing page display gift cards data with actions to edit and delete. You can click the card number to copy it. As other tables, the info & pagination links are at the bottom of the page.
+This listing page displays your gift card data, with actions to edit and delete. You can click the card number to copy it. As with other tables, the info and pagination links are at the bottom of the page.
 
 ---
 
 ## Add/Edit
 
-Add/edit sale page uses the same form with following fields
+The add/edit gift card page uses the same form, with the following fields:
 
-1. **Number**: gift car number, type or click # to generate
-2. **Customer**: (optional) if you want to only a customer to use the card
+1. **Number**: gift card number — type one or click # to generate
+2. **Customer**: (optional) restrict the card to a single customer
 3. **Amount**: value of the gift card
-4. **Expiry Date**: (optional) if card expires
+4. **Expiry Date**: (optional) when the card expires
 
 ---
 

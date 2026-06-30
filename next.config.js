@@ -1,14 +1,13 @@
 const withMarkdoc = require('@markdoc/next.js')
 
-const prod = process.env.NODE_ENV === 'production'
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
+  output: 'export',
+  reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md'],
   images: {
     unoptimized: true,
-  }
+  },
 }
 
 module.exports = withMarkdoc()(nextConfig)

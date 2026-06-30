@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "docs-dev",
+      "runtimeExecutable": "pnpm",
+      "runtimeArgs": ["dev"],
+      "port": 3000
+    },
+    {
+      "name": "docs-static",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["-y", "serve", "docs", "-l", "3100"],
+      "port": 3100
+    }
+  ]
+}

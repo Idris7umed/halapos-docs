@@ -55,6 +55,8 @@ export default function Document() {
   return (
     <Html className="antialiased [font-feature-settings:'ss01']" lang="en">
       <Head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <meta name="theme-color" content="#7c3aed" />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </Head>
       <body className="bg-white dark:bg-dark-900">

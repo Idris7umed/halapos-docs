@@ -88,14 +88,14 @@ export function ThemeSelector(props) {
           <Listbox.Option
             key={theme.value}
             value={theme}
-            className={({ active, selected }) =>
+            className={({ focus, selected }) =>
               clsx(
                 'flex cursor-pointer select-none items-center rounded-[0.625rem] p-1',
                 {
                   'text-primary-500': selected,
-                  'text-dark-900 dark:text-white': active && !selected,
-                  'text-dark-700 dark:text-dark-400': !active && !selected,
-                  'bg-dark-100 dark:bg-dark-900/40': active,
+                  'text-dark-900 dark:text-white': focus && !selected,
+                  'text-dark-700 dark:text-dark-400': !focus && !selected,
+                  'bg-dark-100 dark:bg-dark-900/40': focus,
                 }
               )
             }
